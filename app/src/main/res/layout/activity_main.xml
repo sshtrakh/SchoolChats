@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<LinearLayout android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    tools:context=".MainActivity"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <androidx.appcompat.widget.Toolbar
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/toolbar"
+          android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+          android:popupTheme="@style/MenuStyle"/>
+
+       <com.google.android.material.tabs.TabLayout
+           android:layout_width="match_parent"
+           android:id="@+id/tab_layout"
+           android:layout_height="wrap_content"
+           android:background="@color/colorPrimaryDark"
+           app:tabSelectedTextColor="#fff"
+           app:tabIndicatorColor="#fff"
+           app:tabTextColor="#fff"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="WELCOME MY FRIENDAAA!"
-        android:gravity="center"
-        android:textColor="@color/colorPrimary"
-        android:textSize="25sp"
-        android:textStyle="bold"/>
+        android:id="@+id/view_pager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
 
 </LinearLayout>

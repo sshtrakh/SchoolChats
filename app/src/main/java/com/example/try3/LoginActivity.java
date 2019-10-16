@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -15,6 +16,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.core.Tag;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
 public class LoginActivity extends AppCompatActivity {
@@ -62,9 +65,18 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
-
-
-
+         //add in order to skip log in---------------------------
+      /*  FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            // User is signed in
+            Intent i = new Intent(LoginActivity.this, MainActivity.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(i);
+        } else {
+            // User is signed out
+            //Log.d(TAG, "onAuthStateChanged:signed_out");
+        }*/
+       //--------------------------------------------------
 
     }
 }
