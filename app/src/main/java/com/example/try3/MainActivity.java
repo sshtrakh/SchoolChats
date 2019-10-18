@@ -11,6 +11,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 
 import com.example.try3.Fragments.ChatsFragment;
+import com.example.try3.Fragments.GroupsFragment;
 import com.example.try3.Fragments.ProfileFragment;
 import com.example.try3.Fragments.UsersFragment;
 import com.google.android.material.tabs.TabLayout;
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         viewPagerAdapter.addFragment(new ChatsFragment(),"Chats");
         viewPagerAdapter.addFragment(new UsersFragment(),"Users");
         viewPagerAdapter.addFragment(new ProfileFragment(),"Profile");
+        viewPagerAdapter.addFragment(new GroupsFragment(),"Groups");
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
 

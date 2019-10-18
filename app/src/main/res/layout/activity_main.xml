@@ -24,7 +24,10 @@
            android:background="@color/colorPrimaryDark"
            app:tabSelectedTextColor="#fff"
            app:tabIndicatorColor="#fff"
-           app:tabTextColor="#fff"/>
+           app:tabTextColor="#fff"
+           android:layoutDirection="ltr"
+           app:tabMode="fixed"
+           app:tabGravity="fill"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
