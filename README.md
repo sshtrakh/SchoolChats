@@ -9,3 +9,4 @@ and transfer relevant materials to each other.
  - Notifications (Retrofit)
  - Chats (send pics from gallery/camera, send files, send current location)
 
+Link to youtube video introducing the app: https://youtu.be/MAxjDWGEAVs
