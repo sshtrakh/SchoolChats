@@ -9,7 +9,7 @@ and transfer relevant materials to each other.
  - Notifications (Retrofit)
  - Chats (send pics from gallery/camera, send files, send current location)
  
-![](https://ibb.co/F6QVTwL) 
+[![](https://ibb.co/F6QVTwL)]
 ![](https://ibb.co/2jGMrM4)
 ![](https://ibb.co/hLpDmFC)
 ![](https://ibb.co/QQ8jX7y)
